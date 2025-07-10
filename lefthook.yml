@@ -1,0 +1,13 @@
+pre-commit:
+    commands:
+        fix:
+            glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+            run: npm run fix:format
+        add:
+            run: git add {staged_files}
+
+pre-push:
+    commands:
+        lint:
+            glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+            run: npm run lint:check

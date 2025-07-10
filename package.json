@@ -1,0 +1,40 @@
+{
+    "name": "ytmusic-deskvop",
+    "version": "1.0.0",
+    "description": "YouTube Music Unofficial Client",
+    "main": "out/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron .",
+        "dev": "tsc && electron .",
+        "build": "tsc",
+        "lint": "biome lint .",
+        "lint:format": "biome format --error-on-warnings .",
+        "lint:lint": "biome lint --error-on-warnings .",
+        "lint:check": "biome check --error-on-warnings .",
+        "fix:format": "biome format --write .",
+        "fix:lint": "biome lint --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Hiro527/ytmusic-deskvop.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Hiro527/ytmusic-deskvop/issues"
+    },
+    "homepage": "https://github.com/Hiro527/ytmusic-deskvop#readme",
+    "devDependencies": {
+        "@biomejs/biome": "^2.1.1",
+        "@types/discord-rpc": "^4.0.9",
+        "@types/node": "^24.0.12",
+        "electron": "^37.2.0",
+        "lefthook": "^1.12.1",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "discord-rpc": "^4.0.1",
+        "electron-store": "^10.1.0"
+    }
+}
