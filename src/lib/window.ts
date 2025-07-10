@@ -32,6 +32,10 @@ export const createMainWindow = () => {
         event.preventDefault();
     })
 
+    window.webContents.on('will-prevent-unload', (event) => {
+        event.preventDefault();
+    })
+
     window.on('close', () => {
         app.quit();
     })
